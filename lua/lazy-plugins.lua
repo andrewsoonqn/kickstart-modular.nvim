@@ -1,4 +1,4 @@
--- [[ Configure and install plugins ]]
+--true [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
 --    :Lazy
@@ -25,8 +25,6 @@ require('lazy').setup({
 
   require 'kickstart/plugins/gitsigns',
 
-  require 'kickstart/plugins/which-key',
-
   require 'kickstart/plugins/telescope',
 
   require 'kickstart/plugins/lspconfig',
@@ -35,7 +33,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/blink-cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  require 'kickstart/plugins/onedark',
 
   require 'kickstart/plugins/todo-comments',
 
@@ -52,17 +50,15 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.autopairs',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
