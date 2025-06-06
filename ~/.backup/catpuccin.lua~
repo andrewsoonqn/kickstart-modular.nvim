@@ -54,8 +54,8 @@ return {
           },
           mocha = {
             base = '#141B1E',
-            mantle = '#000000',
-            crust = '#000000',
+            mantle = '#302C3C',
+            crust = '#302C3C',
           },
         },
         custom_highlights = {},

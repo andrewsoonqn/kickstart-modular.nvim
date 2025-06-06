@@ -1,6 +1,9 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+-- vim.o.winborder = 'rounded' -- Or 'single', 'double', 'none'
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = '#123456' })
+
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -73,7 +76,7 @@ vim.o.backup = true
 vim.o.backupdir = '~/.backup'
 vim.o.autoindent = true
 vim.o.smartindent = true
-vim.o.shiftwidth = 2
+vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.wrap = true

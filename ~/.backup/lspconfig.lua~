@@ -1,4 +1,4 @@
--- LSP Pluginslspcon
+-- LSP Plugins
 return {
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -224,6 +224,9 @@ return {
           settings = {
             pyright = {
               reportMissingImports = true,
+              reportUndefinedVariables = true,
+              reportUnusedCode = true,
+              reportUnusedCallResult = true,
               useLibraryCodeForTypes = true,
             },
           },
