@@ -1,0 +1,34 @@
+ALias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cp='cp -i'
+alias l='ls -CF'
+alias la='ls -lha'
+alias ll='ls -lh'
+alias lt='ls -ltr'
+alias lz='ls -lSr'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ~='cd ~'
+alias ls='ls -G'
+alias python='python3'
+alias pip='pip3'
+alias vim='nvim'
+alias vi='vim'
+
+alias con='cd ~/.config/nvim && vim .'
+
+cdd() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: cdd <directory_name>"
+    return 1
+  fi
+  # Use '&&' to ensure 'cd' only runs if 'mkdir' succeeds
+  if mkdir -p "$1" && cd "$1"; then
+  else
+    echo "Error: Could not create or move to '$1'."
+    return 1
+  fi
+}
+
+export PATH="$HOME/.dotnet/tools:$PATH"

@@ -8,7 +8,6 @@ vim.keymap.set('n', '<leader>w', vim.cmd.write, { desc = '[W]rite file' })
 vim.keymap.set('n', '<leader>pc', ':Precognition toggle<CR>', { desc = 'Toggle [P]re[c]ognition' })
 
 vim.keymap.set('n', '<leader>fv', vim.cmd.Ex)
-
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
