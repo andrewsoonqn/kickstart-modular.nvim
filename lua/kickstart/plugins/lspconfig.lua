@@ -222,9 +222,12 @@ return {
         },
         pyright = {
           settings = {
-            pyright = {
-              reportMissingImports = true,
-              useLibraryCodeForTypes = true,
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                autoImportCompletion = true,
+              },
             },
           },
         },
