@@ -5,7 +5,8 @@ vim.keymap.set('n', '<C-a>', 'ggyG')
 
 vim.keymap.set('n', '<leader>fw', function()
   vim.cmd.write()
-  vim.cmd.Ex()
+  -- vim.cmd.Ex()
+  vim.cmd.Oil()
 end, { desc = '[F]ile View after [W]rite' })
 
 -- vim.keymap.set('c', 'W', 'w', { noremap = true, silent = true })
@@ -14,7 +15,8 @@ vim.keymap.set('n', '<leader>w', vim.cmd.write, { desc = '[W]rite file' })
 
 vim.keymap.set('n', '<leader>pc', ':Precognition toggle<CR>', { desc = 'Toggle [P]re[c]ognition' })
 
-vim.keymap.set('n', '<leader>fv', vim.cmd.Ex, { desc = '[F]ile [V]iew' })
+vim.keymap.set('n', '-', vim.cmd.Oil, { desc = 'Toggle file view' })
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

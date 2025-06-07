@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/andrewsoon/.config/nvim'
+let g:netrw_dirhist_1='/Users/andrewsoon/.config/nvim/lua/custom/plugins'
+let g:netrw_dirhist_0='/Users/andrewsoon/.config/nvim'
 let g:netrw_dirhist_9='/Users/andrewsoon/python_projects/leetcode'
 let g:netrw_dirhist_8='/Users/andrewsoon/python_projects'
 let g:netrw_dirhist_7='/Users/andrewsoon/python_projects/leetcode'
@@ -7,5 +10,3 @@ let g:netrw_dirhist_6='/Users/andrewsoon/python_projects/testing'
 let g:netrw_dirhist_5='/Users/andrewsoon/.config/nvim/lua/kickstart/plugins'
 let g:netrw_dirhist_4='/Users/andrewsoon/.config/nvim/lua/kickstart'
 let g:netrw_dirhist_3='/Users/andrewsoon/.config/nvim/lua'
-let g:netrw_dirhist_2='/Users/andrewsoon/.config/nvim'
-let g:netrw_dirhist_1='/Users/andrewsoon/python_projects/testing'
