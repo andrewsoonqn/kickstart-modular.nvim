@@ -21,6 +21,18 @@ return {
         },
       },
     },
+    routes = {
+      {
+        view = 'mini',
+        filter = {
+          event = 'msg_show',
+        },
+      },
+      {
+        view = 'mini',
+        filter = { event = 'msg_showmode' },
+      },
+    },
   },
   dependencies = {
     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
