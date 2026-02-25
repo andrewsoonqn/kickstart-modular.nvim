@@ -49,6 +49,17 @@ require('lazy').setup({
 
   require 'plugins.lsp.blink-cmp',
 
+  require 'plugins.ui.neoscroll',
+  require 'plugins.ui.noice',
+  require 'plugins.ui.precognition',
+  require 'plugins.ui.rainbow-delimiters',
+
+  require 'plugins.search.harpoon',
+  require 'plugins.search.oil',
+
+  require 'plugins.utils.surround',
+  require 'plugins.utils.resolve',
+
   -- The following comments only work if you have downloaded the repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
