@@ -50,4 +50,35 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+vim.o.backup = true
+vim.o.backupdir = vim.fn.expand '~/.backup/'
+-- vim.o.autoindent = true
+vim.o.smartindent = true
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.expandtab = true
+-- vim.o.wrap = true
+vim.o.linebreak = true
+
+-- Create an autocommand group (this prevents duplicates if you reload your config)
+local diagnostic_toggle = vim.api.nvim_create_augroup('DiagnosticToggle', { clear = true })
+
+-- Hide diagnostics when entering Insert Mode
+vim.api.nvim_create_autocmd('InsertEnter', {
+  group = diagnostic_toggle,
+  pattern = '*',
+  callback = function()
+    vim.diagnostic.enable(false)
+  end,
+})
+
+-- Show diagnostics when leaving Insert Mode
+vim.api.nvim_create_autocmd('InsertLeave', {
+  group = diagnostic_toggle,
+  pattern = '*',
+  callback = function()
+    vim.diagnostic.enable(true)
+  end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
