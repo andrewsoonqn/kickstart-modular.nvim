@@ -23,40 +23,46 @@ require('lazy').setup({
   -- modular approach: using `require 'path.name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  require 'kickstart.plugins.gitsigns',
+  require 'plugins.git.gitsigns',
 
-  require 'kickstart.plugins.which-key',
+  require 'plugins.search.telescope',
 
-  require 'kickstart.plugins.telescope',
+  require 'plugins.utils.bqf',
 
-  require 'kickstart.plugins.lspconfig',
+  require 'plugins.ui.tokyonight',
 
-  require 'kickstart.plugins.conform',
+  require 'plugins.ui.zenline',
 
-  require 'kickstart.plugins.blink-cmp',
+  require 'plugins.utils.todo-comments',
 
-  require 'kickstart.plugins.tokyonight',
+  require 'plugins.utils.mini',
 
-  require 'kickstart.plugins.todo-comments',
+  require 'plugins.lsp.treesitter',
 
-  require 'kickstart.plugins.mini',
+  require 'plugins.utils.which-key',
 
-  require 'kickstart.plugins.treesitter',
+  require 'plugins.lsp.lspconfig',
 
-  -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
+  require 'plugins.lsp.tiny-inline-diagnostic',
+
+  require 'plugins.lsp.conform',
+
+  require 'plugins.lsp.blink-cmp',
+
+  -- The following comments only work if you have downloaded the repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
-  --  Here are some example plugins that I've included in the Kickstart repository.
+  --  Here are some example plugins that I've included in the repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  -- require 'plugins.utils.debug',
+  -- require 'plugins.utils.indent_line',
+  -- require 'plugins.utils.lint',
+  -- require 'plugins.utils.autopairs',
+  -- require 'plugins.utils.neo-tree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
