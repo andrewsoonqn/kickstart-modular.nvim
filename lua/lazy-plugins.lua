@@ -49,8 +49,9 @@ require('lazy').setup({
 
   require 'plugins.lsp.blink-cmp',
 
+  require 'plugins.lsp.fidget',
+
   require 'plugins.ui.neoscroll',
-  require 'plugins.ui.noice',
   require 'plugins.ui.precognition',
   require 'plugins.ui.rainbow-delimiters',
 
