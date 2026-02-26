@@ -1,7 +1,7 @@
 return {
   {
     'zenline.nvim',
-    dir = '/Users/andrewsoon/dev/zenline.nvim',
+    dir = '/Users/andrewsoon/.config/nvim/lua/plugins/ui/zenline.nvim',
     event = { 'WinEnter', 'BufEnter', 'ColorScheme' },
     opts = {
       sections = {
